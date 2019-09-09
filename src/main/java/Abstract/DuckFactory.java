@@ -4,27 +4,26 @@ import ducks.DuckCall;
 import ducks.MallardDuck;
 import ducks.RedHeadDuck;
 import ducks.RubberDuck;
-import quack.QuackCounter;
 import quack.Quackable;
 
-public class CountingDuckFactory extends AbstractDuckFactory {
+public class DuckFactory extends AbstractDuckFactory {
     @Override
     public Quackable createMallardDuck() {
-        return new QuackCounter(new MallardDuck());
+        return new MallardDuck();
     }
 
     @Override
     public Quackable createRedheadDuck() {
-        return new QuackCounter(new RedHeadDuck());
+        return new RedHeadDuck();
     }
 
     @Override
     public Quackable createDuckCall() {
-        return new QuackCounter(new DuckCall());
+        return new DuckCall();
     }
 
     @Override
     public Quackable createRubberDuck() {
-        return new QuackCounter(new RubberDuck());
+        return new RubberDuck();
     }
 }

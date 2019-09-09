@@ -1,4 +1,13 @@
 package quack;
+public class QuackEcho implements Quackable{
 
-public class QuackEcho {
+    Quackable duck;
+    public QuackEcho (Quackable duck) {
+        this.duck = duck;
+    }
+    @Override
+    public void quack() {
+        duck.quack();
+        System.out.println("Echo : Quack");
+    }
 }
