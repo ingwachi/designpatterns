@@ -6,6 +6,7 @@ import ducks.DuckCall;
 import ducks.MallardDuck;
 import ducks.RedHeadDuck;
 import ducks.RubberDuck;
+import quack.QuackCounter;
 import quack.Quackable;
 import Goose.Goose;
 import  Pigeon.Pigeon;

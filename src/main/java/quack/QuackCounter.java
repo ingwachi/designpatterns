@@ -1,6 +1,4 @@
-package simulator;
-
-import quack.Quackable;
+package quack;
 
 public class QuackCounter implements Quackable {
     Quackable duck;
