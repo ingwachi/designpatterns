@@ -11,21 +11,21 @@ import quack.Quackable;
 public class EchoDuckFactory extends AbstractDuckFactory{
     @Override
     public Quackable createMallardDuck() {
-        return new QuackEcho(new QuackCounter(new MallardDuck()));
+        return new QuackCounter(new QuackEcho(new MallardDuck()));
     }
 
     @Override
     public Quackable createRedheadDuck() {
-        return new QuackEcho(new QuackCounter(new RedHeadDuck()));
+        return new QuackCounter(new QuackEcho(new RedHeadDuck()));
     }
 
     @Override
     public Quackable createDuckCall() {
-        return new QuackEcho(new QuackCounter(new DuckCall()));
+        return new QuackCounter(new QuackEcho(new DuckCall()));
     }
 
     @Override
     public Quackable createRubberDuck() {
-        return new QuackEcho(new QuackCounter(new RubberDuck()));
+        return new QuackCounter(new QuackEcho(new RubberDuck()));
     }
 }
